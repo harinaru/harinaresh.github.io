@@ -133,10 +133,103 @@
                       </p>
                       <br />
                       <ul>
-                        <!-- Publication 1 starts here -->
+                        <h1 class="mb-4" style="color: #f4a460" align="left">
+                          <span></span><b>Doctoral Research</b><span></span>
+                        </h1>
+                        <!-- Publication 1 Starts Here -->
+                        <li>
+                          <p>
+                            <a style="color: #000000"
+                              >Is Dynamic Rumor Detection on Social Media
+                              Viable? An Unsupervised Perspective.</a
+                            ><br />
+                            <a style="color: #f4a460">Chahat Raj</a>
+                            and Priyanka Meel (Under Review | Arxiv)
+                            <button
+                              type="button"
+                              class="btn badge"
+                              style="background-color: #a7c7e7; color: #ffffff"
+                              data-popup="abs2"
+                            >
+                              Abstract
+                            </button>
+                            <a
+                              href="./files/9 Is Dynamic Rumor Detection on Social Media Viable An Unsupervised Perspective.pdf"
+                            >
+                              <button
+                                type="button"
+                                class="btn badge"
+                                style="
+                                  background-color: #ec949c;
+                                  color: #ffffff;
+                                "
+                              >
+                                PDF
+                              </button>
+                            </a>
+                            <a href="https://github.com/username/repo">
+                              <button
+                                type="button"
+                                class="btn badge"
+                                style="
+                                  background-color: #ebce77;
+                                  color: #ffffff;
+                                "
+                              >
+                                Code
+                              </button>
+                            </a>
+                            <button
+                              type="button"
+                              class="btn badge"
+                              style="background-color: #b8d8be; color: #ffffff"
+                              data-popup="bib2"
+                            >
+                              BibTeX
+                            </button>
+                          </p>
+                          <div
+                            id="abs2"
+                            class="popup-abs"
+                            style="display: none"
+                          >
+                            &nbsp;&nbsp; This paper investigates the viability
+                            of dynamic rumor detection on social media from an
+                            unsupervised perspective.
+                          </div>
+                          <div id="bib2" class="popup" style="display: none">
+                            @article{raj2023dynamic,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp; title = "Is Dynamic Rumor
+                            Detection on Social Media Viable? An Unsupervised
+                            Perspective",<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp; author = "Raj, Chahat and
+                            Meel, Priyanka",<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp; year = "Under Review",<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp; note = "Arxiv",<br />
+                            }
+                          </div>
+                        </li>
+                        <script>
+                          var badges =
+                            document.querySelectorAll("[data-popup]");
+                          badges.forEach(function (badge) {
+                            var popup = document.getElementById(
+                              badge.dataset.popup
+                            );
+                            badge.addEventListener("click", function () {
+                              if (popup.style.display === "none") {
+                                popup.style.display = "block"; // Show the popup
+                              } else {
+                                popup.style.display = "none"; // Hide the popup
+                              }
+                            });
+                          });
+                        </script>
+                        <!-- Publication 1 Ends Here -->
                         <h1 class="mb-4" style="color: #f4a460" align="left">
                           <span></span><b>Master's Research</b><span></span>
                         </h1>
+                        <!-- Publication 1 starts here -->
                         <li>
                           <p>
                             <a style="color: #000000"
