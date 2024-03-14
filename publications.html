@@ -224,6 +224,94 @@
                           });
                         </script>
                         <!-- Publication 1 Ends Here -->
+
+                        <!-- Publication 2 Starts Here -->
+                        <li>
+                          <p>
+                            <a style="color: #000000"
+                              >SALSA: Salience-based Switching Attack for Adversarial Perturbations in Fake News Detection Models.</a
+                            ><br />
+                            <a style="color: #f4a460">Chahat Raj</a>
+                            , Anjishnu Mukherjee, Hemant Purohit, Antonios Anastasopoulos, and Ziwei Zhu (ECIR 2024)
+                            <button
+                              type="button"
+                              class="btn badge"
+                              style="background-color: #a7c7e7; color: #ffffff"
+                              data-popup="abs2"
+                            >
+                              Abstract
+                            </button>
+                            <a
+                              href="./files/salsa.pdf" // upload pdf link here
+                            >
+                              <button
+                                type="button"
+                                class="btn badge"
+                                style="
+                                  background-color: #ec949c;
+                                  color: #ffffff;
+                                "
+                              >
+                                PDF
+                              </button>
+                            </a>
+                            <a href="https://github.com/iamshnoo/salsa">
+                              <button
+                                type="button"
+                                class="btn badge"
+                                style="
+                                  background-color: #ebce77;
+                                  color: #ffffff;
+                                "
+                              >
+                                Code
+                              </button>
+                            </a>
+                            <button
+                              type="button"
+                              class="btn badge"
+                              style="background-color: #b8d8be; color: #ffffff"
+                              data-popup="bib2"
+                            >
+                              BibTeX
+                            </button>
+                          </p>
+                          <div
+                            id="abs2"
+                            class="popup-abs"
+                            style="display: none"
+                          >
+                            &nbsp;&nbsp; Despite advances in fake news detection algorithms, recent research reveals that machine learning-based fake news detection models are still vulnerable to carefully crafted adversarial attacks. In this landscape, traditional methods, often relying on text perturbations or heuristic-based approaches, have proven insufficient, revealing a critical need for more nuanced and context-aware strategies to enhance the robustness of fake news detection. Our research identifies and addresses three critical areas: creating subtle perturbations, preserving core information while modifying sentence structure, and incorporating inherent interpretability. We propose SALSA, an adversarial Salience-based Switching Attack strategy that harnesses salient words, using similarity-based switching to address the shortcomings of traditional adversarial attack methods. Using SALSA, we perform a two-way attack: misclassifying real news as fake and fake news as real. Due to the absence of standardized metrics to evaluate adversarial attacks in fake news detection, we further propose three new evaluation metrics to gauge the attack’s success. Finally, we validate the transferability of our proposed attack strategy across attacker and victim models, demonstrating our approach’s broad applicability and potency.
+                          </div>
+                          <div id="bib2" class="popup" style="display: none">
+                            @article{raj2024salsa,<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp; title = "SALSA: Salience-based Switching Attack for Adversarial Perturbations in Fake News Detection Models",<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp; author = "Raj, Chahat and Mukherjee, Anjishnu and, Purohit, Hemant and Anastasopoulos, Antonios, and
+                            Zhu, Ziwei",<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp; year = "2024",<br />
+                            &nbsp;&nbsp;&nbsp;&nbsp; journal = "European Conference on Information Retrieval 2024",<br />
+                            }
+                          </div>
+                        </li>
+                        <script>
+                          var badges =
+                            document.querySelectorAll("[data-popup]");
+                          badges.forEach(function (badge) {
+                            var popup = document.getElementById(
+                              badge.dataset.popup
+                            );
+                            badge.addEventListener("click", function () {
+                              if (popup.style.display === "none") {
+                                popup.style.display = "block"; // Show the popup
+                              } else {
+                                popup.style.display = "none"; // Hide the popup
+                              }
+                            });
+                          });
+                        </script>
+                        <!-- Publication 2 Ends Here -->
+
+                        
                         <h1 class="mb-4" style="color: #f4a460" align="left">
                           <span></span><b>Master's Research</b><span></span>
                         </h1>
