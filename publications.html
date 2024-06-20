@@ -86,19 +86,6 @@
                         }
                       </div>                                            
                     </li>
-                    <script>
-                      var badges = document.querySelectorAll("[data-popup]");
-                      badges.forEach(function (badge) {
-                        var popup = document.getElementById(badge.dataset.popup);
-                        badge.addEventListener("click", function () {
-                          if (popup.style.display === "none") {
-                            popup.style.display = "block"; // Show the popup
-                          } else {
-                            popup.style.display = "none"; // Hide the popup
-                          }
-                        });
-                      });
-                    </script>
                     <!-- Publication 5 Ends Here -->
                     <!-- Publication 4 Starts Here -->
                     <li>
@@ -129,20 +116,7 @@
                         }
                       </div>                                            
                     </li>
-                    <script>
-                      var badges = document.querySelectorAll("[data-popup]");
-                      badges.forEach(function (badge) {
-                        var popup = document.getElementById(badge.dataset.popup);
-                        badge.addEventListener("click", function () {
-                          if (popup.style.display === "none") {
-                            popup.style.display = "block"; // Show the popup
-                          } else {
-                            popup.style.display = "none"; // Hide the popup
-                          }
-                        });
-                      });
-                    </script>
-                        <!-- Publication 4 Ends Here -->
+                    <!-- Publication 4 Ends Here -->
                     <!-- Publication 3 Starts Here -->
                     <li>
                       <p>
@@ -176,20 +150,7 @@
                         }
                       </div>                                            
                     </li>
-                    <script>
-                      var badges = document.querySelectorAll("[data-popup]");
-                      badges.forEach(function (badge) {
-                        var popup = document.getElementById(badge.dataset.popup);
-                        badge.addEventListener("click", function () {
-                          if (popup.style.display === "none") {
-                            popup.style.display = "block"; // Show the popup
-                          } else {
-                            popup.style.display = "none"; // Hide the popup
-                          }
-                        });
-                      });
-                    </script>
-                        <!-- Publication 3 Ends Here -->
+                    <!-- Publication 3 Ends Here -->
                     <!-- Publication 2 Starts Here -->
                     <li>
                       <p>
@@ -227,20 +188,7 @@
                       }
                       </div>                                            
                     </li>
-                    <script>
-                      var badges = document.querySelectorAll("[data-popup]");
-                      badges.forEach(function (badge) {
-                        var popup = document.getElementById(badge.dataset.popup);
-                        badge.addEventListener("click", function () {
-                          if (popup.style.display === "none") {
-                            popup.style.display = "block"; // Show the popup
-                          } else {
-                            popup.style.display = "none"; // Hide the popup
-                          }
-                        });
-                      });
-                    </script>
-                        <!-- Publication 2 Ends Here -->
+                    <!-- Publication 2 Ends Here -->
                     <!-- Publication 1 Starts Here -->
                     <li>
                       <p>
@@ -280,19 +228,6 @@
                           }
                       </div>                                            
                     </li>
-                    <script>
-                      var badges = document.querySelectorAll("[data-popup]");
-                      badges.forEach(function (badge) {
-                        var popup = document.getElementById(badge.dataset.popup);
-                        badge.addEventListener("click", function () {
-                          if (popup.style.display === "none") {
-                            popup.style.display = "block"; // Show the popup
-                          } else {
-                            popup.style.display = "none"; // Hide the popup
-                          }
-                        });
-                      });
-                    </script>
                     <!-- Publication 1 Ends Here -->
                       <br />
                       <script src="js/jquery.min.js"></script>
@@ -321,5 +256,20 @@
         </div>
       </div>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var badges = document.querySelectorAll("[data-popup]");
+        badges.forEach(function(badge) {
+          var popup = document.getElementById(badge.dataset.popup);
+          badge.addEventListener("click", function() {
+            if (popup.style.display === "none") {
+              popup.style.display = "block"; // Show the popup
+            } else {
+              popup.style.display = "none"; // Hide the popup
+            }
+          });
+        });
+      });
+    </script> 
   </body>
 </html>
