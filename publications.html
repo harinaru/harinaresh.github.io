@@ -103,34 +103,37 @@
                     <!-- Publication 4 Starts Here -->
                     <li>
                       <p>
-                        <a style="color: #000000">Breaking Bias: Salience-based Switching Attack for Adversarial Perturbations in Fake News Detection Models.</a><br/>
-                        <a style="color: #f4a460">Chahat Raj</a>, Anjishnu Mukherjee, Hemant Purohit, Antonios Anastasopoulos, and Ziwei Zhu (ECIR 2024)
-                        <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="abs2">Abstract</button>
-                        <a href="./files/salsa.pdf">
-                          <button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button>
-                        </a>
-                        <a href="https://github.com/iamshnoo/salsa">
-                          <button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button>
-                        </a>
-                        <button type="button" class="btn badge" style="background-color: #b8d8be; color: #ffffff" data-popup="bib2">BibTeX</button>
+                        <a style="color: #000000">Breaking Bias, Building Bridges: Evaluation and Mitigation of Social Biases in LLMs via Contact Hypothesis.</a><br />
+                        <a style="color: #f4a460">Chahat Raj</a>, Anjishnu Mukherjee, Aylin Caliskan, Antonios Anastasopoulos, and Ziwei Zhu (Under Review 2024)
+                        <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="abs12">Abstract</button>
+                        <a href=""><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
+                        <a href=""><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
+                        <button type="button" class="btn badge" style="background-color: #b8d8be; color: #ffffff" data-popup="bib12">BibTeX</button>
                       </p>
-                      <div id="abs2" class="popup-abs" style="display: none">
-                        &nbsp;&nbsp;Despite advances in fake news detection algorithms, recent research reveals that machine learning-based fake news detection models are still vulnerable to carefully crafted adversarial attacks. In this landscape, traditional methods, often relying on text perturbations or heuristic-based approaches, have proven insufficient, revealing a critical need for more nuanced and context-aware strategies to enhance the robustness of fake news detection. Our research identifies and addresses three critical areas: creating subtle perturbations, preserving core information while modifying sentence structure, and incorporating inherent interpretability. We propose SALSA, an adversarial Salience-based Switching Attack strategy that harnesses salient words, using similarity-based switching to address the shortcomings of traditional adversarial attack methods. Using SALSA, we perform a two-way attack: misclassifying real news as fake and fake news as real. Due to the absence of standardized metrics to evaluate adversarial attacks in fake news detection, we further propose three new evaluation metrics to gauge the attack’s success. Finally, we validate the transferability of our proposed attack strategy across attacker and victim models, demonstrating our approach’s broad applicability and potency.
+                      <div id="abs12" class="popup-abs" style="display: none; font-size: 12px; text-align: justify;">
+                        Large Language Models (LLMs) perpetuate social biases, reflecting prejudices in their training data and reinforcing societal stereotypes
+                        and inequalities. Our work explores the potential of the Contact Hypothesis, a concept from social psychology for debiasing LLMs. We simulate 
+                        various forms of social contact through LLM prompting to measure their influence on the model's biases, mirroring how intergroup interactions 
+                        can reduce prejudices in social contexts. We create a dataset of 108,000 prompts following a principled approach replicating social contact to 
+                        measure biases in three LLMs (LLaMA 2, Tulu, and NousHermes) across 13 social bias dimensions. We propose a unique debiasing technique, 
+                        Social Contact Debiasing (SCD), that instruction-tunes these models with unbiased responses to prompts. Our research demonstrates that LLM 
+                        responses exhibit social biases when subject to contact probing, but more importantly, these biases can be significantly reduced by up to 40% 
+                        in 1 epoch of instruction tuning LLaMA 2 following our SCD strategy. <br /> <br />
                       </div>
-                      <div id="bib2" class="popup" style="display: none">
-                        @article{raj2024salsa,<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;title = "SALSA: Salience-based Switching Attack for Adversarial Perturbations in Fake News Detection Models",<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;author = "Raj, Chahat and Mukherjee, Anjishnu and, Purohit, Hemant and Anastasopoulos, Antonios, and Zhu, Ziwei",<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;year = "2024",<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;journal = "European Conference on Information Retrieval 2024",<br/>
-                      }
-                      </div>
+                      <div id="bib12" class="popup-bib" style="display: none; font-size: 12px; text-align: left; white-space: pre; padding-top: -20px !important">
+                        @article{raj2024breakingbias,
+                          title={Breaking Bias, Building Bridges: Evaluation and Mitigation of Social Biases in LLMs via Contact Hypothesis.},
+                          author={Raj, Chahat and Mukherjee, Anjishnu and Caliskan, Aylin and Anastasopoulos, Antonios and Zhu, Ziwei},
+                          journal={},
+                          year={2024}
+                        }
+                      </div>                                            
                     </li>
                     <script>
                       var badges = document.querySelectorAll("[data-popup]");
-                      badges.forEach(function(badge) {
+                      badges.forEach(function (badge) {
                         var popup = document.getElementById(badge.dataset.popup);
-                        badge.addEventListener("click", function() {
+                        badge.addEventListener("click", function () {
                           if (popup.style.display === "none") {
                             popup.style.display = "block"; // Show the popup
                           } else {
@@ -143,34 +146,41 @@
                     <!-- Publication 3 Starts Here -->
                     <li>
                       <p>
-                        <a style="color: #000000">SALSA: Salience-based Switching Attack for Adversarial Perturbations in Fake News Detection Models.</a><br/>
-                        <a style="color: #f4a460">Chahat Raj</a>, Anjishnu Mukherjee, Hemant Purohit, Antonios Anastasopoulos, and Ziwei Zhu (ECIR 2024)
-                        <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="abs2">Abstract</button>
-                        <a href="./files/salsa.pdf">
-                          <button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button>
-                        </a>
-                        <a href="https://github.com/iamshnoo/salsa">
-                          <button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button>
-                        </a>
-                        <button type="button" class="btn badge" style="background-color: #b8d8be; color: #ffffff" data-popup="bib2">BibTeX</button>
+                        <a style="color: #000000">SALSA: Salience-Based Switching Attack for Adversarial Perturbations in Fake News Detection Models.</a><br />
+                        <a style="color: #f4a460">Chahat Raj*</a>, Anjishnu Mukherjee*, Hemant Purohit, Antonios Anastasopoulos, and Ziwei Zhu (ECIR 2024)
+                        <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="abs12">Abstract</button>
+                        <a href=""><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <a href="./files/salsa.pdf">
+                        <a href=""><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <a href="https://github.com/iamshnoo/salsa">
+                        <button type="button" class="btn badge" style="background-color: #b8d8be; color: #ffffff" data-popup="bib12">BibTeX</button>
                       </p>
-                      <div id="abs2" class="popup-abs" style="display: none">
-                        &nbsp;&nbsp;Despite advances in fake news detection algorithms, recent research reveals that machine learning-based fake news detection models are still vulnerable to carefully crafted adversarial attacks. In this landscape, traditional methods, often relying on text perturbations or heuristic-based approaches, have proven insufficient, revealing a critical need for more nuanced and context-aware strategies to enhance the robustness of fake news detection. Our research identifies and addresses three critical areas: creating subtle perturbations, preserving core information while modifying sentence structure, and incorporating inherent interpretability. We propose SALSA, an adversarial Salience-based Switching Attack strategy that harnesses salient words, using similarity-based switching to address the shortcomings of traditional adversarial attack methods. Using SALSA, we perform a two-way attack: misclassifying real news as fake and fake news as real. Due to the absence of standardized metrics to evaluate adversarial attacks in fake news detection, we further propose three new evaluation metrics to gauge the attack’s success. Finally, we validate the transferability of our proposed attack strategy across attacker and victim models, demonstrating our approach’s broad applicability and potency.
+                      <div id="abs12" class="popup-abs" style="display: none; font-size: 12px; text-align: justify;">
+                        Despite advances in fake news detection algorithms, recent research reveals that machine learning-based fake news detection models are still 
+                        vulnerable to carefully crafted adversarial attacks. In this landscape, traditional methods, often relying on text perturbations or
+                        heuristic-based approaches, have proven insufficient, revealing a critical need for more nuanced and context-aware strategies to enhance the 
+                        robustness of fake news detection. Our research identifies and addresses three critical areas: creating subtle perturbations, preserving core 
+                        information while modifying sentence structure, and incorporating inherent interpretability. We propose SALSA, an adversarial Salience-based
+                        Switching Attack strategy that harnesses salient words, using similaritybased switching to address the shortcomings of traditional adversarial
+                        attack methods. Using SALSA, we perform a two-way attack: misclassifying real news as fake and fake news as real. Due to the absence of
+                        standardized metrics to evaluate adversarial attacks in fake news detection, we further propose three new evaluation metrics to gauge the attack's 
+                        success. Finally, we validate the transferability of our proposed attack strategy across attacker and victim models, demonstrating our
+                        approach's broad applicability and potency. <br /> <br />
                       </div>
-                      <div id="bib2" class="popup" style="display: none">
-                        @article{raj2024salsa,<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;title = "SALSA: Salience-based Switching Attack for Adversarial Perturbations in Fake News Detection Models",<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;author = "Raj, Chahat and Mukherjee, Anjishnu and, Purohit, Hemant and Anastasopoulos, Antonios, and Zhu, Ziwei",<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;year = "2024",<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;journal = "European Conference on Information Retrieval 2024",<br/>
-                      }
-                      </div>
+                      <div id="bib12" class="popup-bib" style="display: none; font-size: 12px; text-align: left; white-space: pre; padding-top: -20px !important">
+                        @inproceedings{raj2024salsa,
+                          title={SALSA: Salience-Based Switching Attack for Adversarial Perturbations in Fake News Detection Models},
+                          author={Raj, Chahat and Mukherjee, Anjishnu and Purohit, Hemant and Anastasopoulos, Antonios and Zhu, Ziwei},
+                          booktitle={European Conference on Information Retrieval},
+                          pages={35--49},
+                          year={2024},
+                          organization={Springer}
+                        }
+                      </div>                                            
                     </li>
                     <script>
                       var badges = document.querySelectorAll("[data-popup]");
-                      badges.forEach(function(badge) {
+                      badges.forEach(function (badge) {
                         var popup = document.getElementById(badge.dataset.popup);
-                        badge.addEventListener("click", function() {
+                        badge.addEventListener("click", function () {
                           if (popup.style.display === "none") {
                             popup.style.display = "block"; // Show the popup
                           } else {
@@ -183,34 +193,45 @@
                     <!-- Publication 2 Starts Here -->
                     <li>
                       <p>
-                        <a style="color: #000000">Global Voices: Salience-based Switching Attack for Adversarial Perturbations in Fake News Detection Models.</a><br/>
-                        <a style="color: #f4a460">Chahat Raj</a>, Anjishnu Mukherjee, Hemant Purohit, Antonios Anastasopoulos, and Ziwei Zhu (ECIR 2024)
-                        <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="abs2">Abstract</button>
-                        <a href="./files/salsa.pdf">
-                          <button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button>
-                        </a>
-                        <a href="https://github.com/iamshnoo/salsa">
-                          <button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button>
-                        </a>
-                        <button type="button" class="btn badge" style="background-color: #b8d8be; color: #ffffff" data-popup="bib2">BibTeX</button>
+                        <a style="color: #000000">Global Voices, Local Biases: Socio-Cultural Prejudices across Languages.</a><br />
+                        Anjishnu Mukherjee*, <a style="color: #f4a460">Chahat Raj*</a>, Ziwei Zhu, and Antonios Anastasopoulos (EMNLP 2023)
+                        <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="abs12">Abstract</button>
+                        <a href=""><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <a href="https://aclanthology.org/2023.emnlp-main.981.pdf">
+                        <a href=""><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <a href="https://github.com/iamshnoo/weathub">
+                        <button type="button" class="btn badge" style="background-color: #b8d8be; color: #ffffff" data-popup="bib12">BibTeX</button>
                       </p>
-                      <div id="abs2" class="popup-abs" style="display: none">
-                        &nbsp;&nbsp;Despite advances in fake news detection algorithms, recent research reveals that machine learning-based fake news detection models are still vulnerable to carefully crafted adversarial attacks. In this landscape, traditional methods, often relying on text perturbations or heuristic-based approaches, have proven insufficient, revealing a critical need for more nuanced and context-aware strategies to enhance the robustness of fake news detection. Our research identifies and addresses three critical areas: creating subtle perturbations, preserving core information while modifying sentence structure, and incorporating inherent interpretability. We propose SALSA, an adversarial Salience-based Switching Attack strategy that harnesses salient words, using similarity-based switching to address the shortcomings of traditional adversarial attack methods. Using SALSA, we perform a two-way attack: misclassifying real news as fake and fake news as real. Due to the absence of standardized metrics to evaluate adversarial attacks in fake news detection, we further propose three new evaluation metrics to gauge the attack’s success. Finally, we validate the transferability of our proposed attack strategy across attacker and victim models, demonstrating our approach’s broad applicability and potency.
+                      <div id="abs12" class="popup-abs" style="display: none; font-size: 12px; text-align: justify;">
+                        Human biases are ubiquitous but not uniform: disparities exist across linguistic, cultural, and societal borders. As large amounts of recent 
+                        literature suggest, language models (LMs) trained on human data can reflect and often amplify the effects of these social biases. However, 
+                        the vast majority of existing studies on bias are heavily skewed towards Western and European languages. In this work, we scale the Word 
+                        Embedding Association Test (WEAT) to 24 languages, enabling broader studies and yielding interesting findings about LM bias. We additionally 
+                        enhance this data with culturally relevant information for each language, capturing local contexts on a global scale. Further, to encompass 
+                        more widely prevalent societal biases, we examine new bias dimensions across toxicity, ableism, and more. Moreover, we delve deeper into the 
+                        Indian linguistic landscape, conducting a comprehensive regional bias analysis across six prevalent Indian languages. Finally, we highlight 
+                        the significance of these social biases and the new dimensions through an extensive comparison of embedding methods, reinforcing the need to 
+                        address them in pursuit of more equitable language models. <br /> <br />
                       </div>
-                      <div id="bib2" class="popup" style="display: none">
-                        @article{raj2024salsa,<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;title = "SALSA: Salience-based Switching Attack for Adversarial Perturbations in Fake News Detection Models",<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;author = "Raj, Chahat and Mukherjee, Anjishnu and, Purohit, Hemant and Anastasopoulos, Antonios, and Zhu, Ziwei",<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;year = "2024",<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;journal = "European Conference on Information Retrieval 2024",<br/>
+                      <div id="bib12" class="popup-bib" style="display: none; font-size: 12px; text-align: left; white-space: pre; padding-top: -20px !important">
+                        @inproceedings{mukherjee-etal-2023-global,
+                          title = "{G}lobal {V}oices, Local Biases: Socio-Cultural Prejudices across Languages",
+                          author = "Mukherjee, Anjishnu  and Raj, Chahat  and Zhu, Ziwei  and Anastasopoulos, Antonios",
+                          editor = "Bouamor, Houda  and Pino, Juan  and Bali, Kalika",
+                          booktitle = "Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing",
+                          month = dec,
+                          year = "2023",
+                          address = "Singapore",
+                          publisher = "Association for Computational Linguistics",
+                          url = "https://aclanthology.org/2023.emnlp-main.981",
+                          doi = "10.18653/v1/2023.emnlp-main.981",
+                          pages = "15828--15845",
                       }
-                      </div>
+                      </div>                                            
                     </li>
                     <script>
                       var badges = document.querySelectorAll("[data-popup]");
-                      badges.forEach(function(badge) {
+                      badges.forEach(function (badge) {
                         var popup = document.getElementById(badge.dataset.popup);
-                        badge.addEventListener("click", function() {
+                        badge.addEventListener("click", function () {
                           if (popup.style.display === "none") {
                             popup.style.display = "block"; // Show the popup
                           } else {
@@ -223,34 +244,47 @@
                     <!-- Publication 1 Starts Here -->
                     <li>
                       <p>
-                        <a style="color: #000000">True and Fair: Robust and Unbiased Fake News Detection via Interpretable Machine Learning.</a><br/>
+                        <a style="color: #000000">True and Fair: Robust and Unbiased Fake News Detection via Interpretable Machine Learning.</a><br />
                         <a style="color: #f4a460">Chahat Raj</a>, Anjishnu Mukherjee and Ziwei Zhu (AAAI/ACM AIES 2023)
-                        <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="abs2">Abstract</button>
-                        <a href="./files/trueandfair.pdf">
-                          <button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button>
-                        </a>
-                        <a href="https://github.com/chahatraj/true-and-fair">
-                          <button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button>
-                        </a>
-                        <button type="button" class="btn badge" style="background-color: #b8d8be; color: #ffffff" data-popup="bib2">BibTeX</button>
+                        <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="abs12">Abstract</button>
+                        <a href=""><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <a href="./files/trueandfair.pdf">
+                        <a href=""><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <a href="https://github.com/chahatraj/true-and-fair">
+                        <button type="button" class="btn badge" style="background-color: #b8d8be; color: #ffffff" data-popup="bib12">BibTeX</button>
                       </p>
-                      <div id="abs2" class="popup-abs" style="display: none">
-                        &nbsp;&nbsp;The dissemination of information, and consequently, misinformation, occurs at an unprecedented speed, making it increasingly difficult to discern the credibility of rapidly circulating news. Advanced large-scale language models have facilitated the development of classifiers capable of effectively identifying misinformation. Nevertheless, these models are intrinsically susceptible to biases that may be introduced through numerous ways, including contaminated data sources or unfair training methodologies. When trained on biased data, machine learning models may inadvertently learn and reinforce these biases, leading to reduced generalization performance. This situation consequently results in an inherent "unfairness" within the system. Interpretability, referring to the ability to understand and explain the decision-making process of a model, can be used as a tool to explain these biases. Our research aims to identify the root causes of these biases in fake news detection and mitigate their presence using interpretability. We also perform inference time attacks to fairness to validate robustness.
+                      <div id="abs12" class="popup-abs" style="display: none; font-size: 12px; text-align: justify;">
+                        The dissemination of information, and consequently, misinformation, occurs at an unprecedented speed, making it increasingly difficult to 
+                        discern the credibility of rapidly circulating news. Advanced large-scale language models have facilitated the development of classifiers 
+                        capable of effectively identifying misinformation. Nevertheless, these models are intrinsically susceptible to biases that may be introduced 
+                        through numerous ways, including contaminated data sources or unfair training methodologies. When trained on biased data, machine learning 
+                        models may inadvertently learn and reinforce these biases, leading to reduced generalization performance. This situation consequently results 
+                        in an inherent "unfairness" within the system. Interpretability, referring to the ability to understand and explain the decision-making 
+                        process of a model, can be used as a tool to explain these biases. Our research aims to identify the root causes of these biases in fake news 
+                        detection and mitigate their presence using interpretability. We also perform inference time attacks to fairness to validate robustness. <br /> <br />
                       </div>
-                      <div id="bib2" class="popup" style="display: none">
-                        @article{raj2023truenfair,<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;title = "True and Fair: Robust and Unbiased Fake News Detection via Interpretable Machine Learning",<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;author = "Raj, Chahat and Mukherjee, Anjishnu and Zhu, Ziwei",<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;year = "2023",<br/>
-                        &nbsp;&nbsp;&nbsp;&nbsp;journal = "AAAI/ACM Conference on Artificial Intelligence, Ethics, and Society",<br/>
-                      }
-                      </div>
+                      <div id="bib12" class="popup-bib" style="display: none; font-size: 12px; text-align: left; white-space: pre; padding-top: -20px !important">
+                        @inproceedings{10.1145/3600211.3604760,
+                          author = {Raj, Chahat and Mukherjee, Anjishnu and Zhu, Ziwei},
+                          title = {True and Fair: Robust and Unbiased Fake News Detection via Interpretable Machine Learning},
+                          year = {2023},
+                          isbn = {9798400702310},
+                          publisher = {Association for Computing Machinery},
+                          address = {New York, NY, USA},
+                          url = {https://doi.org/10.1145/3600211.3604760},
+                          doi = {10.1145/3600211.3604760},
+                          booktitle = {Proceedings of the 2023 AAAI/ACM Conference on AI, Ethics, and Society},
+                          pages = {962-963},
+                          numpages = {2},
+                          keywords = {security, misinformation, interpretability, fairness, bias},
+                          location = {<conf-loc>, <city>Montr\'{e}al</city>, <state>QC</state>, <country>Canada</country>, </conf-loc>},
+                          series = {AIES '23}
+                          }
+                      </div>                                            
                     </li>
                     <script>
                       var badges = document.querySelectorAll("[data-popup]");
-                      badges.forEach(function(badge) {
+                      badges.forEach(function (badge) {
                         var popup = document.getElementById(badge.dataset.popup);
-                        badge.addEventListener("click", function() {
+                        badge.addEventListener("click", function () {
                           if (popup.style.display === "none") {
                             popup.style.display = "block"; // Show the popup
                           } else {
