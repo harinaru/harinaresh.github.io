@@ -19,25 +19,50 @@
   <link rel="stylesheet" href="css/flaticon.css"/>
   <link rel="stylesheet" href="css/icomoon.css"/>
   <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    :root {
+      --theme-color: #8E4585; /* Default theme color */
+    }
+
+    #colorlib-aside a {
+      text-decoration: none !important;
+      border: none !important;
+      color: var(--theme-color) !important; /* Apply theme color to links */
+    }
+
+    .ftco-social a span {
+      color: var(--theme-color) !important; /* Apply theme color to icons */
+    }
+  </style> 
+  <script>
+    (function() {
+        const colors = ['#9582c4', '#ce5c5c', '#949efb', '#81a55f', '#de5d83', '#75c6d9', '#f4a460'];
+        const today = new Date();
+        const colorIndex = today.getDate() % colors.length;
+        const todayColor = colors[colorIndex];
+        document.documentElement.style.setProperty('--theme-color', todayColor);
+        console.log('Today\'s theme color:', todayColor);
+    })();
+    </script>
 </head>
 <body>
 <div id="colorlib-page">
   <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
   <aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
-    <h1 id="colorlib-logo"><a href="index.html" style="color: #9582c4"><span class="img" style="background-image: url(images/author.jpg)"></span>Chahat Raj</a></h1>
+    <h1 id="colorlib-logo"><a href="index.html" class="theme-color"><span class="img" style="background-image: url(images/author.jpg)"></span>Chahat Raj</a></h1>
     <nav id="colorlib-main-menu" role="navigation">
       <ul>
-        <li class="colorlib-active"><a href="./files/chahat_cv.pdf" style="color: #9582c4">CV</a></li>
-        <li class="colorlib-active"><a href="news.html" style="color: #9582c4">News</a></li>
-        <li class="colorlib-active"><a href="affiliations.html" style="color: #9582c4">Affiliations</a></li>
-        <li class="colorlib-active"><a href="publications.html" style="color: #9582c4">Publications</a></li>
-        <li class="colorlib-active"><a href="services.html" style="color: #9582c4">Services</a></li>
-        <li class="colorlib-active"><a href="contact.html" style="color: #9582c4">Contact</a></li>
+        <li><a href="./files/chahat_cv.pdf" class="theme-color">CV</a></li>
+        <li><a href="news.html" class="theme-color">News</a></li>
+        <li><a href="affiliations.html" class="theme-color">Affiliations</a></li>
+        <li class="colorlib-active"><a href="publications.html" class="theme-color">Publications</a></li>
+        <li><a href="services.html" class="theme-color">Services</a></li>
+        <li><a href="contact.html" class="theme-color">Contact</a></li>
         <ul class="ftco-social mt-3">
-          <li class="ftco-animate"><a href="https://linkedin.com/in/chahatraj" style="color: #9582c4"><span class="icon-linkedin"></span></a></li>
-          <li class="ftco-animate"><a href="https://facebook.com/chahat.raj.71" style="color: #9582c4"><span class="icon-facebook"></span></a></li>
-          <li class="ftco-animate"><a href="https://instagram.com/chatty_chahat" style="color: #9582c4"><span class="icon-instagram"></span></a></li>
-          <li class="ftco-animate"><a href="https://twitter.com/chahat__raj" style="color: #9582c4"><span class="icon-twitter"></span></a></li>
+          <li class="ftco-animate"><a href="https://linkedin.com/in/chahatraj" class="theme-color"><span class="icon-linkedin"></span></a></li>
+          <li class="ftco-animate"><a href="https://facebook.com/chahat.raj.71" class="theme-color"><span class="icon-facebook"></span></a></li>
+          <li class="ftco-animate"><a href="https://instagram.com/chatty_chahat" class="theme-color"><span class="icon-instagram"></span></a></li>
+          <li class="ftco-animate"><a href="https://twitter.com/chahat__raj" class="theme-color"><span class="icon-twitter"></span></a></li>
         </ul>
       </ul>
     </nav>
@@ -50,20 +75,20 @@
             <div class="col-lg-32">
               <div class="row">
                 <div class="col-md-12">
-                  <h1 class="mb-4" style="color: #9582c4"><span></span><b>PUBLICATIONS</b><span></span></h1>
+                  <h1 class="mb-4" class="theme-color"><span></span><b>PUBLICATIONS</b><span></span></h1>
                   <p align="center">
-                    <a href="https://scholar.google.com/citations?user=K8EKC4gAAAAJ&hl=en&oi=ao" target="_blank" class="btn-round btn-primary btn" style="background-color: #9582c4">Google Scholar</a>
+                    <a href="https://scholar.google.com/citations?user=K8EKC4gAAAAJ&hl=en&oi=ao" target="_blank" class="btn-round btn-primary btn" style="background-color: #ffffff">Google Scholar</a>
                   </p>
                   <br/>
                   <ul>
-                    <h1 class="mb-4" style="color: #9582c4" align="left">
+                    <h1 class="mb-4" class="theme-color" align="left">
                       <span></span><b>Doctoral Research</b><span></span>
                     </h1>
                     <!-- Publication 5 Starts Here -->
                     <li>
                       <p>
                         <a style="color: #000000">BiasDora: Exploring Hidden Biased Associations in Vision-Language Models.</a><br />
-                        <a style="color: #9582c4">Chahat Raj</a>, Anjishnu Mukherjee, Aylin Caliskan, Antonios Anastasopoulos, and Ziwei Zhu (Under Review 2024)
+                        <a class="theme-color">Chahat Raj</a>, Anjishnu Mukherjee, Aylin Caliskan, Antonios Anastasopoulos, and Ziwei Zhu [Under Review 2024]
                         <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absd5">Abstract</button>
                         <a href="./files/d5.pdf""><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                         <a href=""><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
@@ -91,7 +116,7 @@
                     <li>
                       <p>
                         <a style="color: #000000">Breaking Bias, Building Bridges: Evaluation and Mitigation of Social Biases in LLMs via Contact Hypothesis.</a><br />
-                        <a style="color: #9582c4">Chahat Raj</a>, Anjishnu Mukherjee, Aylin Caliskan, Antonios Anastasopoulos, and Ziwei Zhu (Under Review 2024)
+                        <a class="theme-color">Chahat Raj</a>, Anjishnu Mukherjee, Aylin Caliskan, Antonios Anastasopoulos, and Ziwei Zhu [Under Review 2024]
                         <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absd4">Abstract</button>
                         <a href="./files/d4.pdf""><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                         <a href=""><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
@@ -121,7 +146,7 @@
                     <li>
                       <p>
                         <a style="color: #000000">SALSA: Salience-Based Switching Attack for Adversarial Perturbations in Fake News Detection Models.</a><br />
-                        <a style="color: #9582c4">Chahat Raj*</a>, Anjishnu Mukherjee*, Hemant Purohit, Antonios Anastasopoulos, and Ziwei Zhu (ECIR 2024)
+                        <a class="theme-color">Chahat Raj*</a>, Anjishnu Mukherjee*, Hemant Purohit, Antonios Anastasopoulos, and Ziwei Zhu [ECIR 2024]
                         <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absd3">Abstract</button>
                         <a href="./files/d3.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a>
                         <a href="https://github.com/iamshnoo/salsa"><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a>
@@ -155,7 +180,7 @@
                     <li>
                       <p>
                         <a style="color: #000000">Global Voices, Local Biases: Socio-Cultural Prejudices across Languages.</a><br />
-                        Anjishnu Mukherjee*, <a style="color: #9582c4">Chahat Raj*</a>, Ziwei Zhu, and Antonios Anastasopoulos (EMNLP 2023)
+                        Anjishnu Mukherjee*, <a class="theme-color">Chahat Raj*</a>, Ziwei Zhu, and Antonios Anastasopoulos [EMNLP 2023]
                         <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absd2">Abstract</button>
                         <a href="./files/d2.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a>
                         <a href="https://github.com/iamshnoo/weathub"><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a>
@@ -193,7 +218,7 @@
                     <li>
                       <p>
                         <a style="color: #000000">True and Fair: Robust and Unbiased Fake News Detection via Interpretable Machine Learning.</a><br />
-                        <a style="color: #9582c4">Chahat Raj</a>, Anjishnu Mukherjee and Ziwei Zhu (AAAI/ACM AIES 2023)
+                        <a class="theme-color">Chahat Raj</a>, Anjishnu Mukherjee and Ziwei Zhu [AIES 2023]
                         <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absd1">Abstract</button>
                         <a href="./files/d1.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a>
                         <a href="https://github.com/chahatraj/true-and-fair"><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a>
@@ -230,14 +255,14 @@
                     </li>
                     <!-- Publication 1 Ends Here -->
 
-                    <h1 class="mb-4" style="color: #9582c4" align="left">
+                    <h1 class="mb-4" class="theme-color" align="left">
                       <span></span><b>Master's Research</b><span></span>
                     </h1>
                     <!-- Publication 15 Starts Here -->
                     <li>
                       <p>
                         <a style="color: #000000">Bitcoin Price Prediction using LSTM Autoencoder and False Nearest Neighbor Loss.</a><br />
-                        <a style="color: #9582c4">Chahat Raj</a> and Manojit Chattopadhyay (Under Review 2024)
+                        <a class="theme-color">Chahat Raj</a> and Manojit Chattopadhyay [Under Review 2024]
                         <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absm15">Abstract</button>
                         <a href="./files/m15.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                         <a href="https://github.com/chahatraj/LSTM-Autoencoder-FNN"><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
@@ -262,8 +287,8 @@
                     <li>
                       <p>
                         <a style="color: #000000">Machine Learning Models help Differentiate between Causes of Recurrent Spontaneous Vertigo.</a><br />
-                        Chao Wang, Allison S Young, <a style="color: #9582c4">Chahat Raj</a>, Andrew P Bradshaw, Benjamin Nham, Sally M Rosengren, Zeljka Calic, David Burke, 
-                        G Michael Halmagyi, Gnana K Bharathy, Mukesh Prasad, and Miriam S Welgampola (Journal of Neurology 2024)
+                        Chao Wang, Allison S Young, <a class="theme-color">Chahat Raj</a>, Andrew P Bradshaw, Benjamin Nham, Sally M Rosengren, Zeljka Calic, David Burke, 
+                        G Michael Halmagyi, Gnana K Bharathy, Mukesh Prasad, and Miriam S Welgampola [Journal of Neurology 2024]
                         <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absm14">Abstract</button>
                         <a href="./files/m14.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                         <a href=""><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
@@ -302,7 +327,7 @@
                     <li>
                       <p>
                         <a style="color: #000000">Analyzing Sentiments Towards E-Levy Policy Implementation in Ghana using Twitter Data.</a><br />
-                        Peter Appiahene, Stephen Afrifa, Emmanuel Kyei Akwah, Arjun Choudhry, Inder Khatri, <a style="color: #9582c4">Chahat Raj</a> and Mukesh Prasad (International Journal of Information Technology 2024)
+                        Peter Appiahene, Stephen Afrifa, Emmanuel Kyei Akwah, Arjun Choudhry, Inder Khatri, <a class="theme-color">Chahat Raj</a> and Mukesh Prasad [International Journal of Information Technology 2024]
                         <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absm13">Abstract</button>
                         <a href="./files/m13.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                         <a href=""><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
@@ -340,7 +365,7 @@
                   <li>
                     <p>
                       <a style="color: #000000">Understanding Social Media Engagement in Response to Disaster Fundraising Attempts During Australian Bushfires.</a><br />
-                      Yohei Nii, <a style="color: #9582c4">Chahat Raj</a>, Muhammad Salman Tiwana, Mahendra Samarawickrama, Simeon Simoff, Tony Jan, and Mukesh Prasad (International Conference on Intelligent Vision and Computing 2022)
+                      Yohei Nii, <a class="theme-color">Chahat Raj</a>, Muhammad Salman Tiwana, Mahendra Samarawickrama, Simeon Simoff, Tony Jan, and Mukesh Prasad [International Conference on Intelligent Vision and Computing 2022]
                       <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absm12">Abstract</button>
                       <a href="./files/m12.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                       <a href=""><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
@@ -372,7 +397,7 @@
                   <li>
                     <p>
                       <a style="color: #000000">The Effectiveness of Social Media Engagement Strategy on Disaster Fundraising.</a><br />
-                      Vivek Velivela, <a style="color: #9582c4">Chahat Raj</a>, Muhammad Salman Tiwana, Raj Prasanna, Mahendra Samarawickrama, and Mukesh Prasad (International Conference on Information Systems for Crisis Response and Management 2022)
+                      Vivek Velivela, <a class="theme-color">Chahat Raj</a>, Muhammad Salman Tiwana, Raj Prasanna, Mahendra Samarawickrama, and Mukesh Prasad [International Conference on Information Systems for Crisis Response and Management 2022]
                       <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absm11">Abstract</button>
                       <a href="./files/m11.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                       <a href=""><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
@@ -401,7 +426,7 @@
                   <li>
                     <p>
                       <a style="color: #000000">People Lie, Actions Don't! Modeling Infodemic Proliferation Predictors among Social Media Users.</a><br />
-                      <a style="color: #9582c4">Chahat Raj</a>, and Priyanka Meel (Technology in Society 2022)
+                      <a class="theme-color">Chahat Raj</a>, and Priyanka Meel [Technology in Society 2022]
                       <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absm10">Abstract</button>
                       <a href="./files/m10.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                       <a href=""><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
@@ -436,7 +461,7 @@
                   <li>
                     <p>
                       <a style="color: #000000">Is Dynamic Rumor Detection on Social Media Viable? An Unsupervised Perspective.</a><br />
-                      <a style="color: #9582c4">Chahat Raj</a>, and Priyanka Meel (Arxiv Preprint 2021)
+                      <a class="theme-color">Chahat Raj</a>, and Priyanka Meel [Arxiv Preprint 2021]
                       <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absm9">Abstract</button>
                       <a href="./files/m9.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                       <a href="https://github.com/chahatraj/Unsupervised-Rumor-Detection"><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
@@ -467,7 +492,7 @@
                   <li>
                     <p>
                       <a style="color: #000000">A Review of Web Infodemic Analysis and Detection Trends across Multi-modalities using Deep Neural Networks.</a><br />
-                      <a style="color: #9582c4">Chahat Raj</a>, and Priyanka Meel (Arxiv Preprint 2021)
+                      <a class="theme-color">Chahat Raj</a>, and Priyanka Meel [Arxiv Preprint 2021]
                       <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absm8">Abstract</button>
                       <a href="./files/m8.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                       <a href=""><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
@@ -499,7 +524,7 @@
                   <li>
                     <p>
                       <a style="color: #000000">Cyberbullying Detection: Hybrid Models based on Machine Learning and Natural Language Processing Techniques.</a><br />
-                      <a style="color: #9582c4">Chahat Raj</a>, Ayush Agarwal, Gnana Bharathy, Bhuva Narayan, and Mukesh Prasad (Electronics 2021)
+                      <a class="theme-color">Chahat Raj</a>, Ayush Agarwal, Gnana Bharathy, Bhuva Narayan, and Mukesh Prasad [Electronics 2021]
                       <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absm7">Abstract</button>
                       <a href="./files/m7.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                       <a href=""><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
@@ -538,7 +563,7 @@
                   <li>
                     <p>
                       <a style="color: #000000">Machine Learning Techniques for Differential Diagnosis of Vertigo and Dizziness: A Review.</a><br />
-                      Varad Kabade, Ritika Hooda, <a style="color: #9582c4">Chahat Raj</a>, Zainab Awan, Allison S Young, Miriam S Welgampola, and Mukesh Prasad (Sensors 2021)
+                      Varad Kabade, Ritika Hooda, <a class="theme-color">Chahat Raj</a>, Zainab Awan, Allison S Young, Miriam S Welgampola, and Mukesh Prasad [Sensors 2021]
                       <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absm6">Abstract</button>
                       <a href="./files/m6.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                       <a href=""><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
@@ -573,7 +598,7 @@
                   <li>
                     <p>
                       <a style="color: #000000">ARCNN Framework for Multimodal Infodemic Detection.</a><br />
-                      <a style="color: #9582c4">Chahat Raj</a>, and Priyanka Meel (Neural Networks 2021)
+                      <a class="theme-color">Chahat Raj</a>, and Priyanka Meel [Neural Networks 2021]
                       <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absm5">Abstract</button>
                       <a href="./files/m5.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                       <a href="https://github.com/chahatraj/TIPNet-Infodemic-Detection"><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
@@ -609,7 +634,7 @@
                   <li>
                     <p>
                       <a style="color: #000000">ConvNet Frameworks for Multi-Modal Fake News Detection.</a><br />
-                      <a style="color: #9582c4">Chahat Raj</a>, and Priyanka Meel (Applied Intelligence 2021)
+                      <a class="theme-color">Chahat Raj</a>, and Priyanka Meel [Applied Intelligence 2021]
                       <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absm4">Abstract</button>
                       <a href="./files/m4.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                       <a href="https://github.com/chahatraj/ConvNets-for-Multimodal-Fake-News-Detection"><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
@@ -646,7 +671,7 @@
                   <li>
                     <p>
                       <a style="color: #000000">Microblogs Deception Detection using BERT and Multiscale CNNs.</a><br />
-                      <a style="color: #9582c4">Chahat Raj</a>, and Priyanka Meel (Global Conference for Advancement in Technology 2021)
+                      <a class="theme-color">Chahat Raj</a>, and Priyanka Meel [Global Conference for Advancement in Technology 2021]
                       <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absm3">Abstract</button>
                       <a href="./files/m3.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                       <a href="https://github.com/chahatraj/Multiscale-CNNs"><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
@@ -679,7 +704,7 @@
                   <li>
                     <p>
                       <a style="color: #000000">MediaEval 2020: An Ensemble-based Multimodal Approach for Coronavirus and 5G Conspiracy Tweet Detection.</a><br />
-                      <a style="color: #9582c4">Chahat Raj</a>, and Mihir P Mehta (MediaEval 2020)
+                      <a class="theme-color">Chahat Raj</a>, and Mihir P Mehta [MediaEval 2020]
                       <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absm2">Abstract</button>
                       <a href="./files/m2.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                       <a href=""><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->
@@ -707,7 +732,7 @@
                   <li>
                     <p>
                       <a style="color: #000000">Fake News on Multiple Online Social Networks.</a><br />
-                      <a style="color: #9582c4">Chahat Raj</a>, and Priyanka Meel (ICPCCAI 2020)
+                      <a class="theme-color">Chahat Raj</a>, and Priyanka Meel [ICPCCAI 2020]
                       <button type="button" class="btn badge" style="background-color: #a7c7e7; color: #ffffff" data-popup="absm1">Abstract</button>
                       <a href="./files/m1.pdf"><button type="button" class="btn badge" style="background-color: #ec949c; color: #ffffff">PDF</button></a> <!-- TODO: add pdf -->
                       <a href=""><button type="button" class="btn badge" style="background-color: #ebce77; color: #ffffff">Code</button></a> <!-- TODO: add code -->

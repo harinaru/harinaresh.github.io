@@ -31,6 +31,31 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <style>
+      :root {
+        --theme-color: #8E4585; /* Default theme color */
+      }
+  
+      #colorlib-aside a {
+        text-decoration: none !important;
+        border: none !important;
+        color: var(--theme-color) !important; /* Apply theme color to links */
+      }
+  
+      .ftco-social a span {
+        color: var(--theme-color) !important; /* Apply theme color to icons */
+      }
+    </style> 
+    <script>
+      (function() {
+          const colors = ['#9582c4', '#ce5c5c', '#949efb', '#81a55f', '#de5d83', '#75c6d9', '#f4a460'];
+          const today = new Date();
+          const colorIndex = today.getDate() % colors.length;
+          const todayColor = colors[colorIndex];
+          document.documentElement.style.setProperty('--theme-color', todayColor);
+          console.log('Today\'s theme color:', todayColor);
+      })();
+      </script>
   </head>
   <body>
     <div id="colorlib-page">
@@ -41,7 +66,7 @@
         class="js-fullheight text-center"
       >
         <h1 id="colorlib-logo">
-          <a href="index.html" style="color: #9582c4"
+          <a href="index.html" class="theme-color"
             ><span
               class="img"
               style="background-image: url(images/author.jpg)"
@@ -52,57 +77,57 @@
         <nav id="colorlib-main-menu" role="navigation">
           <ul>
             <li class="colorlib-active">
-              <a href="./files/chahat_cv.pdf" style="color: #9582c4">CV</a>
+              <a href="./files/chahat_cv.pdf" class="theme-color">CV</a>
             </li>
             <li class="colorlib-active">
-              <a href="news.html" style="color: #9582c4">News</a>
+              <a href="news.html" class="theme-color">News</a>
             </li>
             <li class="colorlib-active">
-              <a href="affiliations.html" style="color: #9582c4"
+              <a href="affiliations.html" class="theme-color"
                 >Affiliations</a
               >
             </li>
             <li class="colorlib-active">
-              <a href="publications.html" style="color: #9582c4"
+              <a href="publications.html" class="theme-color"
                 >Publications</a
               >
             </li>
             <!-- <li class="colorlib-active">
-              <a href="research.html" style="color: #9582c4">Research</a>
+              <a href="research.html" class="theme-color">Research</a>
             </li> -->
             <li class="colorlib-active">
-              <a href="services.html" style="color: #9582c4">Services</a>
+              <a href="services.html" class="theme-color">Services</a>
             </li>
             <li class="colorlib-active">
-              <a href="blogchain.html" style="color: #9582c4">Blogchain</a>
+              <a href="blogchain.html" class="theme-color">Blogchain</a>
             </li>
             <li class="colorlib-active">
-              <a href="contact.html" style="color: #9582c4">Contact</a>
+              <a href="contact.html" class="theme-color">Contact</a>
             </li>
             <ul class="ftco-social mt-3">
               <li class="ftco-animate">
                 <a
                   href="https://linkedin.com/in/chahatraj"
-                  style="color: #9582c4"
+                  class="theme-color"
                   ><span class="icon-linkedin"></span
                 ></a>
               </li>
               <li class="ftco-animate">
                 <a
                   href="https://facebook.com/chahat.raj.71"
-                  style="color: #9582c4"
+                  class="theme-color"
                   ><span class="icon-facebook"></span
                 ></a>
               </li>
               <li class="ftco-animate">
                 <a
                   href="https://instagram.com/chatty_chahat"
-                  style="color: #9582c4"
+                  class="theme-color"
                   ><span class="icon-instagram"></span
                 ></a>
               </li>
               <li class="ftco-animate">
-                <a href="https://twitter.com/chahat__raj" style="color: #9582c4"
+                <a href="https://twitter.com/chahat__raj" class="theme-color"
                   ><span class="icon-twitter"></span
                 ></a>
               </li>
@@ -170,11 +195,11 @@
               <div class="author-info text p-3 p-md-5">
                 <div class="desc">
                   <h1 class="big-letter">Chahat Raj</h1>
-                  <h1 class="mb-4" style="color: #9582c4">
+                  <h1 class="mb-4" class="theme-color">
                     <span></span>The Researcher's Blog<span></span>
                   </h1>
                   <p class="mb-4">
-                    <a href="blog3.html" style="color: #9582c4">Blog 1</a> My
+                    <a href="blog3.html" class="theme-color">Blog 1</a> My
                     Research Experience at IIM Raipur
                   </p>
                 </div>

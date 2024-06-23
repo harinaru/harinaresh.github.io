@@ -8661,6 +8661,27 @@ textarea.form-control {
       color: #000000;
       font-style: italic; }
 
+/* Add this rule to ensure inline black color remains unchanged */
+[style*="color: #000000"] {
+  color: #000000 !important; /* Ensure black remains black */
+}
+
+/* Default and theme color rules */
+:root {
+  --theme-color: #8E4585; /* Default color, will be overridden by JavaScript */
+}
+
+.theme-color,
+.theme-color a,
+#colorlib-logo a,
+#colorlib-main-menu a,
+.ftco-social a,
+h1.mb-4,
+p a {
+  color: var(--theme-color) !important;
+}
+
+
 #ftco-loader {
   position: fixed;
   width: 96px;

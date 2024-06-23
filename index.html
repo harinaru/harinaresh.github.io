@@ -19,25 +19,63 @@
   <link rel="stylesheet" href="css/flaticon.css"/>
   <link rel="stylesheet" href="css/icomoon.css"/>
   <link rel="stylesheet" href="css/style.css"/>
+  <style>
+    :root {
+      --theme-color: #8E4585; /* Default theme color */
+    }
+
+    #colorlib-aside a {
+      text-decoration: none !important;
+      border: none !important;
+      color: var(--theme-color) !important; /* Apply theme color to links */
+    }
+
+    .ftco-social a span {
+      color: var(--theme-color) !important; /* Apply theme color to icons */
+    }
+  </style>  
+  <script>
+    (function() {
+        const colors = ['#9582c4', '#ce5c5c', '#949efb', '#81a55f', '#de5d83', '#75c6d9', '#f4a460'];
+        const today = new Date();
+        const colorIndex = today.getDate() % colors.length;
+        const todayColor = colors[colorIndex];
+        document.documentElement.style.setProperty('--theme-color', todayColor);
+        console.log('Today\'s theme color:', todayColor);
+    })();
+    </script>
+  <!-- <script>
+    (function() {
+        const colors = ['#9582c4', '#f4a460', '#ce5c5c', '#949efb', '#81a55f', '#de5d83', '#75c6d9'];
+        function changeColor() {
+            const colorIndex = Math.floor(Math.random() * colors.length);
+            const newColor = colors[colorIndex];
+            document.documentElement.style.setProperty('--theme-color', newColor);
+            console.log('New theme color:', newColor);
+        }
+        changeColor(); // Initial color change
+        setInterval(changeColor, 1000); // Change color every 1000 milliseconds (1 second)
+    })();
+    </script> -->
 </head>
 <body>
 <div id="colorlib-page">
   <a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle"><i></i></a>
   <aside id="colorlib-aside" role="complementary" class="js-fullheight text-center">
-    <h1 id="colorlib-logo"><a href="index.html" style="color: #9582c4"><span class="img" style="background-image: url(images/author.jpg)"></span>Chahat Raj</a></h1>
+    <h1 id="colorlib-logo"><a href="index.html" class="theme-color"><span class="img" style="background-image: url(images/author.jpg)"></span>Chahat Raj</a></h1>
     <nav id="colorlib-main-menu" role="navigation">
       <ul>
-        <li class="colorlib-active"><a href="./files/chahat_cv.pdf" style="color: #9582c4">CV</a></li>
-        <li class="colorlib-active"><a href="news.html" style="color: #9582c4">News</a></li>
-        <li class="colorlib-active"><a href="affiliations.html" style="color: #9582c4">Affiliations</a></li>
-        <li class="colorlib-active"><a href="publications.html" style="color: #9582c4">Publications</a></li>
-        <li class="colorlib-active"><a href="services.html" style="color: #9582c4">Services</a></li>
-        <li class="colorlib-active"><a href="contact.html" style="color: #9582c4">Contact</a></li>
+        <li><a href="./files/chahat_cv.pdf" class="theme-color">CV</a></li>
+        <li><a href="news.html" class="theme-color">News</a></li>
+        <li><a href="affiliations.html" class="theme-color">Affiliations</a></li>
+        <li><a href="publications.html" class="theme-color">Publications</a></li>
+        <li><a href="services.html" class="theme-color">Services</a></li>
+        <li><a href="contact.html" class="theme-color">Contact</a></li>
         <ul class="ftco-social mt-3">
-          <li class="ftco-animate"><a href="https://linkedin.com/in/chahatraj" style="color: #9582c4"><span class="icon-linkedin"></span></a></li>
-          <li class="ftco-animate"><a href="https://facebook.com/chahat.raj.71" style="color: #9582c4"><span class="icon-facebook"></span></a></li>
-          <li class="ftco-animate"><a href="https://instagram.com/chatty_chahat" style="color: #9582c4"><span class="icon-instagram"></span></a></li>
-          <li class="ftco-animate"><a href="https://twitter.com/chahat__raj" style="color: #9582c4"><span class="icon-twitter"></span></a></li>
+          <li class="ftco-animate"><a href="https://linkedin.com/in/chahatraj" class="theme-color"><span class="icon-linkedin"></span></a></li>
+          <li class="ftco-animate"><a href="https://facebook.com/chahat.raj.71" class="theme-color"><span class="icon-facebook"></span></a></li>
+          <li class="ftco-animate"><a href="https://instagram.com/chatty_chahat" class="theme-color"><span class="icon-instagram"></span></a></li>
+          <li class="ftco-animate"><a href="https://twitter.com/chahat__raj" class="theme-color"><span class="icon-twitter"></span></a></li>
         </ul>
       </ul>
     </nav>
@@ -67,19 +105,19 @@
             <div class="desc">
               <span class="subheading">Hey! I'm</span>
               <h1 class="big-letter">Chahat Raj</h1>
-              <h1 class="mb-4" style="color: #9582c4"><span></span>Chahat Raj<span></span></h1>
-              <p class="mb-4"><a style="color: #9582c4"></a>An NLP Researcher!</p>
+              <h1 class="mb-4" class="theme-color"><span></span>Chahat Raj<span></span></h1>
+              <p class="mb-4"><a class="theme-color"></a>An NLP Researcher!</p>
               <p style="font-size: 14px" align="justify">
-                I am a third-year Ph.D. student, majoring in Computer Science at George Mason University. I'm advised by <a href="https://zziwei.github.io/" style="color: #9582c4">Prof. Ziwei Zhu</a> 
-                and <a href="https://cs.gmu.edu/~antonis/author/antonios-anastasopoulos/" style="color: #9582c4">Prof. Antonios Anastasopoulos</a>. I also collaborate closely with 
-                <a href="https://faculty.washington.edu/aylin/" style="color: #9582c4">Prof. Aylin Caliskan</a> 
+                I am a third-year Ph.D. student, majoring in Computer Science at George Mason University. I'm advised by <a href="https://zziwei.github.io/" class="theme-color">Prof. Ziwei Zhu</a> 
+                and <a href="https://cs.gmu.edu/~antonis/author/antonios-anastasopoulos/" class="theme-color">Prof. Antonios Anastasopoulos</a>. I also collaborate closely with 
+                <a href="https://faculty.washington.edu/aylin/" class="theme-color">Prof. Aylin Caliskan</a> 
                 at the University of Washington.
-                <br /><br /> I specialize in <a style="color: #9582c4">sociocultural biases, ethics, and fairness</a> in multimodal and multilingual NLP. 
+                <br /><br /> I specialize in <a class="theme-color">sociocultural biases, ethics, and fairness</a> in multimodal and multilingual NLP. 
                 Currently, I am working towards understanding how biases perpetuate and reinforce in 
-                <a style="color: #9582c4">(large) vision-language models</a>, and exploring ways to mitigate these. 
-                I draw on concepts from <a style="color: #9582c4">sociology and psychology</a> to add depth and perspective to my research.
+                <a class="theme-color">(large) vision-language models</a>, and exploring ways to mitigate these. 
+                I draw on concepts from <a class="theme-color">sociology and psychology</a> to add depth and perspective to my research.
                 <br /><br />
-                <a style="color: #9582c4">The times when I'm not a Researcher, I'm a Poet!</a>
+                <a class="theme-color">The times when I'm not a Researcher, I'm a Poet!</a>
               </p>
               <h3 class="signature h1" align="center">Chahat Raj</h3>
               <ul class="ftco-social mt-3"></ul>

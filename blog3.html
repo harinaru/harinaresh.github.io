@@ -31,6 +31,16 @@
     <link rel="stylesheet" href="css/flaticon.css" />
     <link rel="stylesheet" href="css/icomoon.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <script>
+      (function() {
+          const colors = ['#9582c4', '#ce5c5c', '#949efb', '#81a55f', '#de5d83', '#75c6d9', '#f4a460'];
+          const today = new Date();
+          const colorIndex = today.getDate() % colors.length;
+          const todayColor = colors[colorIndex];
+          document.documentElement.style.setProperty('--theme-color', todayColor);
+          console.log('Today\'s theme color:', todayColor);
+      })();
+      </script>
   </head>
   <body>
     <div id="colorlib-page">
@@ -41,7 +51,7 @@
         class="js-fullheight text-center"
       >
         <h1 id="colorlib-logo">
-          <a href="index.html" style="color: #9582c4"
+          <a href="index.html" class="theme-color"
             ><span
               class="img"
               style="background-image: url(images/author.jpg)"
@@ -52,57 +62,57 @@
         <nav id="colorlib-main-menu" role="navigation">
           <ul>
             <li class="colorlib-active">
-              <a href="./files/chahat_cv.pdf" style="color: #9582c4">CV</a>
+              <a href="./files/chahat_cv.pdf" class="theme-color">CV</a>
             </li>
             <li class="colorlib-active">
-              <a href="news.html" style="color: #9582c4">News</a>
+              <a href="news.html" class="theme-color">News</a>
             </li>
             <li class="colorlib-active">
-              <a href="affiliations.html" style="color: #9582c4"
+              <a href="affiliations.html" class="theme-color"
                 >Affiliations</a
               >
             </li>
             <li class="colorlib-active">
-              <a href="publications.html" style="color: #9582c4"
+              <a href="publications.html" class="theme-color"
                 >Publications</a
               >
             </li>
             <!-- <li class="colorlib-active">
-              <a href="research.html" style="color: #9582c4">Research</a>
+              <a href="research.html" class="theme-color">Research</a>
             </li> -->
             <li class="colorlib-active">
-              <a href="services.html" style="color: #9582c4">Services</a>
+              <a href="services.html" class="theme-color">Services</a>
             </li>
             <li class="colorlib-active">
-              <a href="blogchain.html" style="color: #9582c4">Blogchain</a>
+              <a href="blogchain.html" class="theme-color">Blogchain</a>
             </li>
             <li class="colorlib-active">
-              <a href="contact.html" style="color: #9582c4">Contact</a>
+              <a href="contact.html" class="theme-color">Contact</a>
             </li>
             <ul class="ftco-social mt-3">
               <li class="ftco-animate">
                 <a
                   href="https://linkedin.com/in/chahatraj"
-                  style="color: #9582c4"
+                  class="theme-color"
                   ><span class="icon-linkedin"></span
                 ></a>
               </li>
               <li class="ftco-animate">
                 <a
                   href="https://facebook.com/chahat.raj.71"
-                  style="color: #9582c4"
+                  class="theme-color"
                   ><span class="icon-facebook"></span
                 ></a>
               </li>
               <li class="ftco-animate">
                 <a
                   href="https://instagram.com/chatty_chahat"
-                  style="color: #9582c4"
+                  class="theme-color"
                   ><span class="icon-instagram"></span
                 ></a>
               </li>
               <li class="ftco-animate">
-                <a href="https://twitter.com/chahat__raj" style="color: #9582c4"
+                <a href="https://twitter.com/chahat__raj" class="theme-color"
                   ><span class="icon-twitter"></span
                 ></a>
               </li>
@@ -120,7 +130,7 @@
               <div class="col-lg-32">
                 <div class="row">
                   <div class="col-md-12">
-                    <h1 class="mb-4" style="color: #9582c4" align="center">
+                    <h1 class="mb-4" class="theme-color" align="center">
                       <span></span><b>My Research Experience at IIM-R</b
                       ><span></span>
                     </h1>
@@ -130,7 +140,7 @@
                     </h6>
                     <br />
                     <p align="justify">
-                      <a style="color: #9582c4"
+                      <a class="theme-color"
                         >Indian Institute of Management Raipur</a
                       >
                       and my story began in May'21. Master's was ending and
@@ -142,13 +152,13 @@
                       not give it a try? And indeed it was true. I contacted a
                       professor and I got a response within a few hours. It was
                       a conversation over mail and
-                      <a style="color: #9582c4">I got Hired!</a> for conducting
+                      <a class="theme-color">I got Hired!</a> for conducting
                       research under his mentorship. The prof wasn't much aware
                       of my capabilities and he was taking a chance. (I have a
                       slight idea that he was impressed by my profile.) He asked
                       me to choose one of his three project ideas. I got to work
                       on
-                      <a style="color: #9582c4">Bitcoin Price Prediction.</a>
+                      <a class="theme-color">Bitcoin Price Prediction.</a>
                       The project was to implement an LSTM autoencoder
                       regularized by False Nearest Neighbor loss. I knew LSTM
                       very well back then. I knew autoencoders. But I had never
@@ -160,7 +170,7 @@
                       R code before. And now I had to learn R. It is said that R
                       is easy but I never consider so at first about any
                       programming language. (P.S.:
-                      <a style="color: #9582c4">I hated Programming.</a>)
+                      <a class="theme-color">I hated Programming.</a>)
                       Anyhow, I started implementing. I was getting closer
                       somehow by repeatedly reading a single blog and the codes
                       but not at all the Harvard guy's paper. Then came a day, R
@@ -192,12 +202,12 @@
                       reviewed it and asked me to make minor changes. (Probably
                       he wants a 3000-word draft now.) And guess what? Its June
                       16th and I'm still procrastinating.
-                      <a style="color: #9582c4"
+                      <a class="theme-color"
                         >I'll write the draft tomorrow, for sure!.</a
                       >
                     </p>
                     <p align="justify">
-                      <a style="color: #9582c4"
+                      <a class="theme-color"
                         >P.S. I have read that Harvard guy's paper. <br />And I
                         know R.
                       </a>
